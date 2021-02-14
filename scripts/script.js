@@ -31,7 +31,7 @@ var count = document.getElementById('cart-count');
 count.textContent = cart.length;
 
 function setup () {
-  for (let i = 1; i < myStorage.getItem('datalen'); i++) {
+  for (let i = 1; i <= myStorage.getItem('datalen'); i++) {
     const prolist = document.getElementById('product-list');
     var obj = JSON.parse(myStorage.getItem(i));
     var a = new ProductItem(obj);

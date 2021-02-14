@@ -2,7 +2,7 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   // TODO
-  var myfetch = fetch('https://fakestoreapi.com/products');
+  var myfetch = fetch('//fakestoreapi.com/products');
   myfetch.then( function(response) {
     return response.json();
   }).then(function(json) {
